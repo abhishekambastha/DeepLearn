@@ -30,7 +30,7 @@ image_size = 28
 pixel_depth = 255.0
 
 def load_letter(folder, min_num_images):
-    image_files = [d for d in os.listdir(folder)] 
+    image_files = [d for d in os.listdir(folder)]
     dataset = np.ndarray(shape=(len(image_files), image_size, image_size), dtype=np.float32)
 
     image_index = 0
